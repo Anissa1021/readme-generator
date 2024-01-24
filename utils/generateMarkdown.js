@@ -1,7 +1,8 @@
-# README generator
+function generateMarkdown (data) {
+  return `# ${data.title}
 
   ## Description
-  To create a README generator by answering questions.
+  ${data.description}
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,20 +14,24 @@
   
   ## Installation 
   To install dependencies, run the command:
-  npm i inquirer
+  ${data.install}
 
   ## Usage 
-  Answer each question to generate README
+  ${data.usage}
 
   ## License 
-  MIT
+  ${data.license}
 
   ## Contributing 
-  n/a
+  ${data.contribution}
 
   ## Tests
   To run tests, run the command:
-  no testing available
+  ${data.test}
 
   ## Questions
-  Any questions about the project contact me at anissa1021@gmail.com. See more of my projects at https://github.com/Anissa1021.
+  Any questions about the project contact me at ${data.email}. See more of my projects at https://github.com/${data.github}.
+`;
+}
+
+module.exports = generateMarkdown;
