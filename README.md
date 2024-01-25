@@ -10,6 +10,9 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+
+  ## Walkthrough
+  https://app.screencastify.com/v3/watch/MDT1iai5GJxD1CJ7b67k
   
   ## Installation 
   To install dependencies, run the command:
